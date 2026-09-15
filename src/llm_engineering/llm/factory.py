@@ -3,7 +3,7 @@ from langchain_groq import ChatGroq
 from langchain_ollama import ChatOllama
 from langchain_openrouter import ChatOpenRouter
 
-from src.llm_engineering.core import app_setting
+from llm_engineering.core import app_setting
 
 from .providers import LLMProvider
 

@@ -1,4 +1,4 @@
-from src.llm_engineering.llm import get_llm, LLMProvider
+from llm_engineering.llm import get_llm, LLMProvider
 
 
 def main():
@@ -7,12 +7,12 @@ def main():
 
     print("Creating LLM...")
 
-    llm = get_llm(LLMProvider.OLLAMA)
+    llm = get_llm(LLMProvider.GEMINI)
 
     print("LLM created")
 
     response = llm.invoke(
-        "LangChain چیست؟ در دو جمله توضیح بده."
+        "what is langchain.in one sentence"
     )
 
     print()
